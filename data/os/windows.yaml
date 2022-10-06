@@ -1,5 +1,5 @@
 ---
-firebird::owner: Administrator
+firebird::user: Administrator
 firebird::group: Administrator
 firebird::config_path: 'C:\Program Files\Firebird\Firebird_3_0\firebird.conf'
 firebird::manage_service: true
