@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.1.1](https://github.com/serviceerp/puppet-firebird/tree/v0.1.1) (2022-10-06)
+
+[Full Changelog](https://github.com/serviceerp/puppet-firebird/compare/v0.1.0...v0.1.1)
+
+**Merged pull requests:**
+
+- Update metadata for forge [\#4](https://github.com/ServiceERP/puppet-firebird/pull/4) ([sebastianrakel](https://github.com/sebastianrakel))
+
 ## [v0.1.0](https://github.com/serviceerp/puppet-firebird/tree/v0.1.0) (2022-10-06)
 
 [Full Changelog](https://github.com/serviceerp/puppet-firebird/compare/297f3212be3c607469fdd0e01bbf67059c800c17...v0.1.0)
