@@ -1,0 +1,8 @@
+---
+firebird::owner: root
+firebird::group: root
+firebird::service_name: firebird3.0
+firebird::package_name: firebird3.0-server
+firebird::version: latest
+firebird::config_path: '/etc/firebird/3.0/firebird.conf'
+firebird::manage_service: true

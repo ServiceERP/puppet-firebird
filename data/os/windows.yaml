@@ -1,0 +1,8 @@
+---
+firebird::owner: Administrator
+firebird::group: Administrator
+firebird::config_path: 'C:\Program Files\Firebird\Firebird_3_0\firebird.conf'
+firebird::manage_service: true
+firebird::service_name: FirebirdServerDefaultInstance
+firebird::version: 3.0.7
+firebird::package_name: firebird

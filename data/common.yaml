@@ -1,0 +1,6 @@
+---
+firebird::config:
+  default_db_cache_pages: 30K
+  temp_cache_limit: 1G
+  lock_mem_size: 30M
+  file_system_cache_threshold: 2M
