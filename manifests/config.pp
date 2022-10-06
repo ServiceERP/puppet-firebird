@@ -1,4 +1,11 @@
 # @summary configure firebird server
+#
+# @param config_path Path to configuration
+# @param service_name Name of the service
+# @param user User/Owner of the firebird configuration
+# @param group User/Owner of the firebird configuration
+# @param config configuration hash
+#
 class firebird::config (
   String[1] $config_path = $firebird::config_path,
   String[1] $service_name = $firebird::service_name,
