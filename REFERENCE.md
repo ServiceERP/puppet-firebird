@@ -27,64 +27,55 @@ The following parameters are available in the `firebird` class:
 * [`package_name`](#package_name)
 * [`version`](#version)
 * [`config`](#config)
-* [`manage_service`](#manage_service)
 * [`manage_package`](#manage_package)
 
 ##### <a name="service_name"></a>`service_name`
 
 Data type: `String[1]`
 
-
+Name of the service
 
 ##### <a name="config_path"></a>`config_path`
 
 Data type: `String[1]`
 
-
+Path to configuration
 
 ##### <a name="user"></a>`user`
 
 Data type: `String[1]`
 
-
+User/Owner of the firebird configuration
 
 ##### <a name="group"></a>`group`
 
 Data type: `String[1]`
 
-
+User/Owner of the firebird configuration
 
 ##### <a name="package_name"></a>`package_name`
 
 Data type: `String[1]`
 
-
+Name of the firebird package to install
 
 ##### <a name="version"></a>`version`
 
 Data type: `String[1]`
 
-
+package version should be used
 
 ##### <a name="config"></a>`config`
 
 Data type: `Hash`
 
-
-
-##### <a name="manage_service"></a>`manage_service`
-
-Data type: `Boolean`
-
-
-
-Default value: ``true``
+configuration hash
 
 ##### <a name="manage_package"></a>`manage_package`
 
 Data type: `Boolean`
 
-
+manage package installation
 
 Default value: ``true``
 
@@ -106,7 +97,7 @@ The following parameters are available in the `firebird::config` class:
 
 Data type: `String[1]`
 
-
+Path to configuration
 
 Default value: `$firebird::config_path`
 
@@ -114,7 +105,7 @@ Default value: `$firebird::config_path`
 
 Data type: `String[1]`
 
-
+Name of the service
 
 Default value: `$firebird::service_name`
 
@@ -122,7 +113,7 @@ Default value: `$firebird::service_name`
 
 Data type: `String[1]`
 
-
+User/Owner of the firebird configuration
 
 Default value: `$firebird::user`
 
@@ -130,7 +121,7 @@ Default value: `$firebird::user`
 
 Data type: `String[1]`
 
-
+User/Owner of the firebird configuration
 
 Default value: `$firebird::group`
 
@@ -138,7 +129,7 @@ Default value: `$firebird::group`
 
 Data type: `Hash`
 
-
+configuration hash
 
 Default value: `$firebird::config`
 
@@ -157,7 +148,7 @@ The following parameters are available in the `firebird::install` class:
 
 Data type: `String`
 
-
+Firebird package_name which should be installed
 
 Default value: `$firebird::package_name`
 
@@ -165,7 +156,7 @@ Default value: `$firebird::package_name`
 
 Data type: `String`
 
-
+package version should be used
 
 Default value: `$firebird::version`
 
