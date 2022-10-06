@@ -2,9 +2,9 @@
   "name": "serviceerp-firebird",
   "version": "0.1.1-rc0",
   "author": "ServiceERP GmbH",
-  "summary": "",
+  "summary": "Install Firebird Server",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/ServiceERP/puppet-firebird",
   "dependencies": [
 
   ],
