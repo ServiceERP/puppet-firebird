@@ -1,6 +1,6 @@
 {
   "name": "serviceerp-firebird",
-  "version": "0.3.0",
+  "version": "0.3.1-rc0",
   "author": "ServiceERP GmbH",
   "summary": "Install Firebird Server",
   "license": "AGPL-3.0",
