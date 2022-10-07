@@ -9,6 +9,7 @@
 * [`firebird`](#firebird): Installs a firebird server
 * [`firebird::config`](#firebirdconfig): configure firebird server
 * [`firebird::install`](#firebirdinstall): Installs firebird server
+* [`firebird::service`](#firebirdservice): Manage firebird service
 
 ## Classes
 
@@ -28,6 +29,7 @@ The following parameters are available in the `firebird` class:
 * [`version`](#version)
 * [`config`](#config)
 * [`manage_package`](#manage_package)
+* [`manage_service`](#manage_service)
 
 ##### <a name="service_name"></a>`service_name`
 
@@ -79,6 +81,14 @@ manage package installation
 
 Default value: ``true``
 
+##### <a name="manage_service"></a>`manage_service`
+
+Data type: `Boolean`
+
+should the firebird service be managed
+
+Default value: ``true``
+
 ### <a name="firebirdconfig"></a>`firebird::config`
 
 configure firebird server
@@ -92,6 +102,7 @@ The following parameters are available in the `firebird::config` class:
 * [`user`](#user)
 * [`group`](#group)
 * [`config`](#config)
+* [`manage_service`](#manage_service)
 
 ##### <a name="config_path"></a>`config_path`
 
@@ -133,6 +144,14 @@ configuration hash
 
 Default value: `$firebird::config`
 
+##### <a name="manage_service"></a>`manage_service`
+
+Data type: `Boolean`
+
+should the firebird service be notified for a restart
+
+Default value: `$firebird::manage_service`
+
 ### <a name="firebirdinstall"></a>`firebird::install`
 
 Installs firebird server
@@ -159,4 +178,22 @@ Data type: `String`
 package version should be used
 
 Default value: `$firebird::version`
+
+### <a name="firebirdservice"></a>`firebird::service`
+
+Manage firebird service
+
+#### Parameters
+
+The following parameters are available in the `firebird::service` class:
+
+* [`service_name`](#service_name)
+
+##### <a name="service_name"></a>`service_name`
+
+Data type: `String[1]`
+
+Name of the firebird service
+
+Default value: `$firebird::service_name`
 

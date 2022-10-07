@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "author": "ServiceERP GmbH",
   "summary": "Install Firebird Server",
-  "license": "Apache-2.0",
+  "license": "AGPL-3.0",
   "source": "https://github.com/ServiceERP/puppet-firebird",
   "dependencies": [
 
