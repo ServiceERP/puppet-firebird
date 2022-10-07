@@ -1,5 +1,5 @@
 ---
-firebird::owner: root
+firebird::user: root
 firebird::group: root
 firebird::service_name: firebird3.0
 firebird::package_name: firebird3.0-server

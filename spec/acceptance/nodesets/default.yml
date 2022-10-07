@@ -1,0 +1,12 @@
+---
+HOSTS:
+  ubuntu2204-64-1:
+    box: generic/ubuntu2204
+    synced_folder: disabled
+    platform: ubuntu-22.04-amd64
+    hypervisor: vagrant
+    roles:
+    - agent
+CONFIG:
+  nfs_server: none
+  consoleport: 443

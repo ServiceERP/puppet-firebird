@@ -8,6 +8,7 @@
 # @param version package version should be used
 # @param config configuration hash
 # @param manage_package manage package installation
+# @param manage_service should the firebird service be managed
 #
 # @author Sebastian Rakel <sebastian.rakel@service-erp.de>
 class firebird (
@@ -19,10 +20,15 @@ class firebird (
   String[1] $version,
   Hash $config,
   Boolean $manage_package = true,
+  Boolean $manage_service = true,
 ) {
   if $manage_package {
     include firebird::install
   }
 
   include firebird::config
+
+  if $manage_service {
+    include firebird::service
+  }
 }

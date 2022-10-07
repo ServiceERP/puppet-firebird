@@ -11,7 +11,6 @@ class firebird::install (
     'Windows':  {
       package { $package_name:
         ensure   => $version,
-        provider => 'chocolatey',
       }
     }
     default: {

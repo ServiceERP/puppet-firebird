@@ -5,6 +5,7 @@
 # @param user User/Owner of the firebird configuration
 # @param group User/Owner of the firebird configuration
 # @param config configuration hash
+# @param manage_service should the firebird service be notified for a restart
 #
 class firebird::config (
   String[1] $config_path = $firebird::config_path,
@@ -12,10 +13,17 @@ class firebird::config (
   String[1] $user = $firebird::user,
   String[1] $group = $firebird::group,
   Hash $config = $firebird::config,
+  Boolean $manage_service = $firebird::manage_service,
 ) {
+  if $manage_service {
+    $notifies = Service[$service_name]
+  } else {
+    $notifies = []
+  }
+
   file { $config_path:
     ensure  => file,
-    notify  => Service[$service_name],
+    notify  => $notifies,
     mode    => '0644',
     owner   => $user,
     group   => $group,
