@@ -4,12 +4,21 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v0.3.0](https://github.com/serviceerp/puppet-firebird/tree/v0.3.0) (2022-10-07)
+
+[Full Changelog](https://github.com/serviceerp/puppet-firebird/compare/v0.2.0...v0.3.0)
+
+**Merged pull requests:**
+
+- Add first tests [\#8](https://github.com/ServiceERP/puppet-firebird/pull/8) ([sebastianrakel](https://github.com/sebastianrakel))
+
 ## [v0.2.0](https://github.com/serviceerp/puppet-firebird/tree/v0.2.0) (2022-10-06)
 
 [Full Changelog](https://github.com/serviceerp/puppet-firebird/compare/v0.1.1...v0.2.0)
 
 **Merged pull requests:**
 
+- Release 0.2.0 [\#7](https://github.com/ServiceERP/puppet-firebird/pull/7) ([sebastianrakel](https://github.com/sebastianrakel))
 - Update modulesync [\#6](https://github.com/ServiceERP/puppet-firebird/pull/6) ([sebastianrakel](https://github.com/sebastianrakel))
 
 ## [v0.1.1](https://github.com/serviceerp/puppet-firebird/tree/v0.1.1) (2022-10-06)
